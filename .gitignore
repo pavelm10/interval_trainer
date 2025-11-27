@@ -3,3 +3,4 @@
 .venv/
 .DS_STORE
 .env
+.ruff_cache
