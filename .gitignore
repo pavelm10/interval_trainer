@@ -6,3 +6,4 @@
 *.ruff_cache
 *.mypy_cache
 __py_cache__
+.Trashes
