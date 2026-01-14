@@ -6,6 +6,7 @@ from ruamel.yaml import safe_load
 FDIR = pathlib.Path(__file__).parent.resolve()
 VLC = 'C:/Program Files/VideoLAN/VLC/vlc.exe'
 
+API_KEY="dsg43q423aaaa"
 
 class Trainer:
 
@@ -14,6 +15,7 @@ class Trainer:
     def __init__(self, cfg, break_sec=15):
         self.train_seq = cfg
         self.break_sec = max(0, break_sec - 3)
+        print(API_KEY)
 
     def train(self):
         self.play_sound('get ready for kick ass training')
