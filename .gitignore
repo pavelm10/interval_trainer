@@ -11,5 +11,6 @@ __py_cache__
 backup*
 .some/
 .trash
+one/
 .env.prd
 another/
