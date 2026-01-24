@@ -1,4 +1,5 @@
 *.mp3
+.data/
 .idea/
 .venv/
 .DS_STORE
