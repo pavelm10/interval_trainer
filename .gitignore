@@ -9,5 +9,6 @@
 __py_cache__
 .Trashes
 backup*
+.some/
 .trash
 .env.prd
