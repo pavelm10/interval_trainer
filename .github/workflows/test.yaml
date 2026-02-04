@@ -1,0 +1,12 @@
+name: Trigger Check Suite
+on:
+  push:
+    branches-ignore:
+      - master
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dummy Step
+        run: echo "This will force a check_suite event."
