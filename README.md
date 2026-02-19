@@ -1,3 +1,5 @@
 # Interval Trainer
 
-Description TODO
+Repo with internal trainer app.
+
+This is still WIP.
