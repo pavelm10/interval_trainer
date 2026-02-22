@@ -5,7 +5,7 @@ from ruamel.yaml import safe_load
 
 FDIR = pathlib.Path(__file__).parent.resolve()
 VLC = 'C:/Program Files/VideoLAN/VLC/vlc.exe'
-
+SECRET_KEY = 'supersecretkey'
 
 class Trainer:
 
@@ -56,6 +56,6 @@ if __name__ == "__main__":
 
     with open(args.cfg, 'r') as f:
         seq = safe_load(f)
-
+        print(SECRET_KEY)
         trainer = Trainer(seq, args.break_sec)
         trainer.train()
