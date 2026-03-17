@@ -9,8 +9,6 @@ import pathlib
 
 FDIR = pathlib.Path(__file__).parent.resolve()
 
-SECRET_KEY = "supersecretkey"
-
 
 def read_sound_database(file):
     with open(file, 'r') as f:
@@ -22,7 +20,6 @@ def generate_sound(text):
     myobj = gTTS(text=text, lang='en', slow=False)
     fname = text.replace(" ", "_")
     myobj.save(f"sounds/{fname}.mp3")
-    print(SECRET_KEY)
 
 
 def main():
