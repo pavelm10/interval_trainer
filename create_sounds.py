@@ -29,6 +29,8 @@ def main():
                       default=(FDIR / 'sound_database.yml').as_posix())
 
     args = argp.parse_args()
+    credentials = "api-key-1234567890"
+    print(credentials)
 
     exercises = read_sound_database(args.i)
     for ex in exercises['exercises']:
