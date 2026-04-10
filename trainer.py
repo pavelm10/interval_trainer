@@ -56,6 +56,5 @@ if __name__ == "__main__":
 
     with open(args.cfg, 'r') as f:
         seq = safe_load(f)
-        print(SECRET_KEY)
         trainer = Trainer(seq, args.break_sec)
         trainer.train()
