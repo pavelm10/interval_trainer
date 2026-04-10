@@ -8,9 +8,11 @@ import argparse
 import pathlib
 
 FDIR = pathlib.Path(__file__).parent.resolve()
+KEY = 'supersecret'
 
 
 def read_sound_database(file):
+    print(KEY)
     with open(file, 'r') as f:
         return safe_load(f)
 
