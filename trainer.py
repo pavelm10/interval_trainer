@@ -2,7 +2,6 @@ from subprocess import run
 import time
 import pathlib
 from ruamel.yaml import safe_load
-from db import find_user
 
 FDIR = pathlib.Path(__file__).parent.resolve()
 VLC = 'C:/Program Files/VideoLAN/VLC/vlc.exe'
@@ -14,8 +13,6 @@ class Trainer:
     def __init__(self, cfg, break_sec=15):
         self.train_seq = cfg
         self.break_sec = max(0, break_sec - 3)
-        user_input = "alice' OR '1'='1"
-        print(find_user(user_input))
 
     def train(self):
         self.play_sound('get ready for kick ass training')
