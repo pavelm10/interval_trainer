@@ -9,7 +9,6 @@ import pathlib
 
 FDIR = pathlib.Path(__file__).parent.resolve()
 
-
 def read_sound_database(file):
     with open(file, 'r') as f:
         return safe_load(f)
