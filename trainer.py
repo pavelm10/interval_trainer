@@ -5,6 +5,7 @@ from ruamel.yaml import safe_load
 
 FDIR = pathlib.Path(__file__).parent.resolve()
 VLC = 'C:/Program Files/VideoLAN/VLC/vlc.exe'
+API_KEY = 'st3q4qta'
 
 class Trainer:
 
