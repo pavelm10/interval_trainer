@@ -6,10 +6,6 @@ import os
 import subprocess
 
 
-def eval_user_input(user_input):
-    # Unsafe: directly evaluating untrusted input
-    return eval(user_input)
-
 
 def command_injection(user_command):
     # Unsafe: shell injection via untrusted input
