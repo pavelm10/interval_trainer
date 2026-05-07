@@ -6,6 +6,13 @@ import os
 import subprocess
 
 
+HARD_CODED_SECRET = "SuperSecretPassword123"
+
+
+def use_hard_coded_secret():
+    # Unsafe: hard-coded credentials / secrets
+    return HARD_CODED_SECRET
+
 
 def command_injection(user_command):
     # Unsafe: shell injection via untrusted input
