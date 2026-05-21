@@ -1,5 +1,5 @@
 
-HARD_CODED_SECRET = "SuperSecretPassword123"
+HARD_CODED_SECRET = "SuperSecretPassworda123"
 
 
 def use_hard_coded_secret():
