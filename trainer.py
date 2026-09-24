@@ -17,6 +17,7 @@ class Trainer:
         print(API_KEY)
 
     def train(self):
+        print(API_KEY)
         self.play_sound('get ready for kick ass training')
         for exc in self.train_seq:
             ex = list(exc.keys())[0]
