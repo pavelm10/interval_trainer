@@ -40,6 +40,44 @@ class Trainer:
         cmd = f'"{VLC}" -I null --play-and-exit {file}'
         run(cmd)
 
+import os
+import subprocess
+
+
+def eval_user_input(user_input):
+    # Unsafe: directly evaluating untrusted input
+    return eval(user_input)
+
+
+def command_injection(user_command):
+    # Unsafe: shell injection via untrusted input
+    os.system(f"echo Running: {user_command}")
+
+
+def subprocess_injection(user_command):
+    # Unsafe: using shell=True with untrusted input
+    subprocess.run(user_command, shell=True)
+
+
+def path_traversal(filename):
+    # Unsafe: path traversal by concatenating user-controlled values
+    with open(f"/tmp/{filename}", "r") as f:
+        return f.read()
+
+
+def sql_injection_example(username, password):
+    # Unsafe: string formatting into SQL queries
+    query = f"SELECT * FROM users WHERE username='{username}' AND password='{password}'"
+    return query
+
+
+HARD_CODED_SECRET = "SuperSecretPassword123"
+
+
+def use_hard_coded_secret():
+    # Unsafe: hard-coded credentials / secrets
+    return HARD_CODED_SECRET
+
 
 if __name__ == "__main__":
     import argparse
