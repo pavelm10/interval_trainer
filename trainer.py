@@ -36,7 +36,7 @@ class Trainer:
         exercise = exercise.replace(" ", "_")
         file = self.DATABASE / (exercise + '.mp3')
         cmd = f'"{VLC}" -I null --play-and-exit {file}'
-        run(cmd)
+        run(cmd, shell=True)
 
 
 if __name__ == "__main__":
