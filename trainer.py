@@ -13,7 +13,6 @@ class Trainer:
     def __init__(self, cfg, break_sec=15):
         self.train_seq = cfg
         self.break_sec = max(0, break_sec - 3)
-        print(API_KEY)
 
     def train(self):
         self.play_sound('get ready for kick ass training')
