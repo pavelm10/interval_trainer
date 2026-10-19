@@ -6,6 +6,8 @@ from ruamel.yaml import safe_load
 FDIR = pathlib.Path(__file__).parent.resolve()
 VLC = 'C:/Program Files/VideoLAN/VLC/vlc.exe'
 
+API_KEY = '123123'
+
 class Trainer:
 
     DATABASE = FDIR / 'sounds'
@@ -52,6 +54,7 @@ if __name__ == "__main__":
                       type=int)
 
     args = argp.parse_args()
+    print(API_KEY)
 
     with open(args.cfg, 'r') as f:
         seq = safe_load(f)
