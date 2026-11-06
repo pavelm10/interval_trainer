@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Dummy Step
-        run: echo "This will force a check_suite event."
+        run: echo "This will force a check_suite event if there are any other checks."
