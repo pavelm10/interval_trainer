@@ -34,8 +34,7 @@ class Trainer:
     def play_sound(self, exercise):
         exercise = exercise.replace(" ", "_")
         file = self.DATABASE / (exercise + '.mp3')
-        cmd = f'"{VLC}" -I null --play-and-exit {file}'
-        run(cmd, shell=True)  # this is vuln
+        run([VLC, '-I', 'null', '--play-and-exit', str(file)], shell=False)
 
 
 if __name__ == "__main__":
