@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "lodash": "4.17.20",
-    "minimist": "1.2.5"
+    "minimist": "1.2.5",
+    "tinymce": "7.0.0"
   }
 }
