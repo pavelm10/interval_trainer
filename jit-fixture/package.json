@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@jit-sca-private/never-published": "1.0.0",
     "ansi-regex": "5.0.0",
     "axios": "0.21.1",
     "hosted-git-info": "2.8.8",
