@@ -10,6 +10,7 @@
     "marked": "0.3.5",
     "moment": "2.29.1",
     "ms": "0.7.0",
-    "trim-newlines": "3.0.0"
+    "trim-newlines": "3.0.0",
+    "word-wrap": "1.2.3"
   }
 }
