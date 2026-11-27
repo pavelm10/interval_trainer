@@ -1,3 +1,3 @@
 const _ = require('lodash');
 
-console.log('a1', _.VERSION);
+console.log('a3', _.VERSION);
